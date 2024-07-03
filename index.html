@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .list-item {
+        position: relative;
+        margin-bottom: 20px;
+      }
+      .list-item::before {
+        content: '"';
+        position: absolute;
+        left: -5px;
+        top: -10px;
+      }
+      .list-item::after {
+        content: '"';
+        position: absolute;
+        right: -5px;
+        top: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">This is a TITLE</h1>
+    <ul class="list">
+      <li class="list-item">items in the list</li>
+      <li class="list-item">items in the list</li>
+      <li class="list-item">items in the list</li>
+      <li class="list-item">items in the list</li>
+      <li class="list-item">items in the list</li>
+      <li class="list-item">items in the list</li>
+      <li class="list-item">items in the list</li>
+      <li class="list-item">items in the list</li>
+    </ul>
+
+    <span id="some-text">This is some test</span> <br />
+
+    <button class="btn">Remove Title</button>
+    <script src="./index.js"></script>
+  </body>
+</html>
